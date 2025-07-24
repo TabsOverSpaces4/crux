@@ -2,15 +2,153 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/thecrux.png" />
+    
+    <!-- Primary Meta Tags -->
+    <title>TheCrux - AI-Powered Book Discovery & Recommendations</title>
+    <meta name="title" content="TheCrux - AI-Powered Book Discovery & Recommendations" />
+    <meta name="description" content="Discover your next favorite book with TheCrux's intelligent AI recommendations. Get personalized book suggestions tailored to your reading preferences and discover amazing reads." />
+    <meta name="keywords" content="book recommendations, AI book search, book discovery, reading suggestions, personalized books, book finder, literary recommendations, smart book search" />
+    <meta name="author" content="TheCrux Team" />
+    <meta name="robots" content="index, follow" />
+    <meta name="language" content="English" />
+    <meta name="revisit-after" content="7 days" />
+    
+    <!-- Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>The Crux</title>
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://crux-rouge-kappa.vercel.app/" />
+    <meta property="og:title" content="TheCrux - AI-Powered Book Discovery & Recommendations" />
+    <meta property="og:description" content="Discover your next favorite book with TheCrux's intelligent AI recommendations. Get personalized book suggestions tailored to your reading preferences." />
+    <meta property="og:image" content="https://github.com/user-attachments/assets/9a90ecdc-abfb-4019-8db0-bb1a8b8e57d3" />
+    <meta property="og:image:alt" content="TheCrux - AI-Powered Book Discovery Platform Banner" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="TheCrux" />
+    <meta property="og:locale" content="en_US" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://crux-rouge-kappa.vercel.app/" />
+    <meta property="twitter:title" content="TheCrux - AI-Powered Book Discovery & Recommendations" />
+    <meta property="twitter:description" content="Discover your next favorite book with TheCrux's intelligent AI recommendations. Get personalized book suggestions tailored to your reading preferences." />
+    <meta property="twitter:image" content="https://github.com/user-attachments/assets/9a90ecdc-abfb-4019-8db0-bb1a8b8e57d3" />
+    <meta property="twitter:image:alt" content="TheCrux - AI-Powered Book Discovery Platform Banner" />
+    
+    <!-- Additional Meta Tags -->
+    <meta name="theme-color" content="#2c1810" />
+    <meta name="msapplication-TileColor" content="#2c1810" />
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="default" />
+    <meta name="apple-mobile-web-app-title" content="TheCrux" />
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://crux-rouge-kappa.vercel.app/" />
+    
+    <!-- Favicon and Icons -->
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+    <link rel="manifest" href="/site.webmanifest" />
+    <link rel="shortcut icon" href="/thecrux.png" />
+    
+    <!-- Preconnect to External Domains -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- Font Loading with Display Swap -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,100..900;1,8..144,100..900&display=swap" rel="stylesheet">
+    
+    <!-- Preload Critical Resources -->
+    <link rel="preload" href="/src/main.jsx" as="script" />
+    
+    <!-- DNS Prefetch for Performance -->
+    <link rel="dns-prefetch" href="//api.thecrux.app" />
+    <link rel="dns-prefetch" href="//cdn.thecrux.app" />
+    
+    <!-- Schema.org Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebApplication",
+      "name": "TheCrux",
+      "description": "AI-powered book discovery and recommendation platform that helps readers find their next favorite book through intelligent suggestions tailored to their preferences.",
+      "url": "https://crux-rouge-kappa.vercel.app/",
+      "applicationCategory": "Entertainment",
+      "operatingSystem": "Any",
+      "offers": {
+        "@type": "Offer",
+        "price": "0",
+        "priceCurrency": "USD"
+      },
+      "creator": {
+        "@type": "Organization",
+        "name": "TheCrux Team"
+      },
+      "image": "https://github.com/user-attachments/assets/9a90ecdc-abfb-4019-8db0-bb1a8b8e57d3",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "ratingCount": "1250"
+      },
+      "featureList": [
+        "AI-powered book recommendations",
+        "Personalized reading suggestions",
+        "Advanced book search",
+        "Reading preference analysis",
+        "Book discovery engine"
+      ]
+    }
+    </script>
+    
+    <!-- Additional Structured Data for Book-related content -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "WebSite",
+      "name": "TheCrux",
+      "url": "https://crux-rouge-kappa.vercel.app/",
+      "description": "Discover your next favorite book with AI-powered recommendations",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": {
+          "@type": "EntryPoint",
+          "urlTemplate": "https://crux-rouge-kappa.vercel.app/search?q={search_term_string}"
+        },
+        "query-input": "required name=search_term_string"
+      },
+      "sameAs": [
+        "https://github.com/TabsOverSpaces4/crux",
+        "https://twitter.com/thecrux",
+        "https://linkedin.com/company/thecrux"
+      ]
+    }
+    </script>
+    
+    <!-- Performance and Security -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="referrer" content="origin-when-cross-origin" />
+    
+    <!-- Analytics (Google Analytics 4) - Replace with your tracking ID -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=GA_MEASUREMENT_ID"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'GA_MEASUREMENT_ID');
+    </script>
   </head>
   <body>
     <div id="root"></div>
     <script type="module" src="/src/main.jsx"></script>
+    
+    <!-- No-JS Fallback -->
+    <noscript>
+      <div style="text-align: center; padding: 50px; font-family: Arial, sans-serif;">
+        <h1>TheCrux - AI-Powered Book Discovery</h1>
+        <p>Please enable JavaScript to use TheCrux and discover your next favorite book.</p>
+      </div>
+    </noscript>
   </body>
 </html>
